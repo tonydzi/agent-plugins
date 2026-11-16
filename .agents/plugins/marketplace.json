@@ -107,7 +107,7 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/tonydzi/charm-os.git",
-        "path": "./plugin",
+        "path": "./",
         "ref": "main"
       },
       "policy": {

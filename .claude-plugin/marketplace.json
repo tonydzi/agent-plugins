@@ -100,9 +100,8 @@
     {
       "name": "charm-os",
       "source": {
-        "source": "git-subdir",
-        "url": "tonydzi/charm-os",
-        "path": "plugin",
+        "source": "github",
+        "repo": "tonydzi/charm-os",
         "ref": "main"
       },
       "description": "TurnState Stop hook that writes each turn (your prompt, a clipped reply summary, files, tools, shell commands) into a local SQLite database, plus two skills: rdr (recall, research prompt, decision memo) and agent-trace-eval (score multi-agent JSONL traces against safety invariants). Requires python3. Nothing is sent over the network.",
