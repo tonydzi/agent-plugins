@@ -1,0 +1,114 @@
+{
+  "name": "agent-plugins",
+  "description": "Anton Dziatkovskii's agent plugins in one catalog: quality gates, second opinions, agent control scorecard, rules as files, session retro, compact block, note recall and a turn ledger.",
+  "owner": {
+    "name": "Anton Dziatkovskii",
+    "url": "https://github.com/tonydzi"
+  },
+  "plugins": [
+    {
+      "name": "break-it-first",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/break-it-first",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "Post-build quality gate skill: after an agent builds something executable, it runs it live, breaks it on purpose, checks visibility, asks rival models to attack it and gives a verdict with evidence before saying done. Instructions only.",
+      "category": "development",
+      "homepage": "https://github.com/tonydzi/break-it-first",
+      "license": "MIT"
+    },
+    {
+      "name": "secondop-panel",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/secondop-panel",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "Second opinion from a panel of reviewer models from different labs, run with uvx secondop-panel==1.0.1. Quorum is counted by model family; exit 3 means no independent second opinion. Instructions only: the plugin ships no code, you supply panel.json and your own API keys or CLI logins.",
+      "category": "development",
+      "homepage": "https://github.com/tonydzi/secondop-panel",
+      "license": "MIT"
+    },
+    {
+      "name": "agent-leash",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/agent-leash",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "Score an AI agent setup with the LEASH-8 worksheet: 24 statements across 8 control domains, a band, and the three cheapest missing controls. Instructions only: runs no code and changes nothing.",
+      "category": "security",
+      "homepage": "https://github.com/tonydzi/agent-leash",
+      "license": "MIT"
+    },
+    {
+      "name": "rules-as-files",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/claude-bible",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "Keep rules for you, your team and your AI agents as one markdown file per rule, with a short index line in CLAUDE.md or AGENTS.md. Covers rule intake, precedence, a declined-decisions journal and objection lists. Instructions only.",
+      "category": "productivity",
+      "homepage": "https://github.com/tonydzi/claude-bible",
+      "license": "MIT"
+    },
+    {
+      "name": "claw-retro",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/claw-retro",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "End-of-session retrospective skill for Claude Code. Inventories what a session actually built, classifies each artifact keep/one-off/promote, routes durable rules to one home with a door audit, archives a retro note and prints a ready /compact paste-block. Instructions only.",
+      "category": "productivity",
+      "homepage": "https://github.com/tonydzi/claw-retro",
+      "license": "MIT"
+    },
+    {
+      "name": "compact-canon",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/compact-canon",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "Prints a filled 7-header block to paste after /compact in Claude Code, so the summary keeps decisions, their reasons, exact paths and values. Instructions only: this plugin runs nothing and cannot run /compact for you.",
+      "category": "productivity",
+      "homepage": "https://github.com/tonydzi/compact-canon",
+      "license": "MIT"
+    },
+    {
+      "name": "sqlite-graph-memory",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/sqlite-graph-memory",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "Recall workflow for linked markdown notes using a separately configured sqlite-graph-memory MCP server. Instructions only: this plugin does not install or start a server. Requires an existing memory_recall tool and a previously built index.",
+      "category": "productivity",
+      "homepage": "https://github.com/tonydzi/sqlite-graph-memory",
+      "license": "MIT"
+    },
+    {
+      "name": "charm-os",
+      "source": {
+        "source": "git-subdir",
+        "url": "tonydzi/charm-os",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "description": "TurnState Stop hook that writes each turn (your prompt, a clipped reply summary, files, tools, shell commands) into a local SQLite database, plus two skills: rdr (recall, research prompt, decision memo) and agent-trace-eval (score multi-agent JSONL traces against safety invariants). Requires python3. Nothing is sent over the network.",
+      "category": "productivity",
+      "homepage": "https://github.com/tonydzi/charm-os",
+      "license": "Apache-2.0"
+    }
+  ]
+}
