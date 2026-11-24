@@ -108,6 +108,52 @@
       "category": "productivity",
       "homepage": "https://github.com/tonydzi/charm-os",
       "license": "Apache-2.0"
+    },
+    {
+      "name": "five-whys-root-cause",
+      "source": "./plugins/five-whys-root-cause",
+      "description": "Root-cause method for defects that keep coming back: gate on three dated cases, one evidence-backed five-why chain with a falsifier per link, counterfactual proof, minimal fix, and a defect-return test. Instructions only, no scripts.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "root-cause-analysis",
+        "five-whys",
+        "debugging",
+        "postmortem",
+        "incident-review",
+        "regression-testing"
+      ]
+    },
+    {
+      "name": "prove-build-works",
+      "source": "./plugins/prove-build-works",
+      "description": "Acceptance gate for coding agents: before the agent says done it runs the build live, breaks it on purpose, shows a test red on broken code, gets a review from a different vendor's model and repeats the check by a second method. Ends in PASS, PARTIAL or FAIL with evidence. Instructions only: runs no code.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "testing",
+        "verification",
+        "acceptance",
+        "mutation-testing",
+        "code-review",
+        "agent-reliability",
+        "quality-gate"
+      ]
+    },
+    {
+      "name": "session-handoff",
+      "source": "./plugins/session-handoff",
+      "description": "Write one self-contained handoff file so another agent session, machine or person can resume unfinished work cold: decisions with reasons, proof of what is done, exact paths, boundaries, rollback and one named next step. Instructions only: runs no code.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "handoff",
+        "context",
+        "compaction",
+        "multi-agent",
+        "session",
+        "workflow"
+      ]
     }
   ]
 }

@@ -105,9 +105,8 @@
     {
       "name": "charm-os",
       "source": {
-        "source": "git-subdir",
+        "source": "url",
         "url": "https://github.com/tonydzi/charm-os.git",
-        "path": "./",
         "ref": "main"
       },
       "policy": {
@@ -115,6 +114,42 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "five-whys-root-cause",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development",
+      "source": {
+        "source": "local",
+        "path": "./plugins/five-whys-root-cause"
+      }
+    },
+    {
+      "name": "prove-build-works",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development",
+      "source": {
+        "source": "local",
+        "path": "./plugins/prove-build-works"
+      }
+    },
+    {
+      "name": "session-handoff",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development",
+      "source": {
+        "source": "local",
+        "path": "./plugins/session-handoff"
+      }
     }
   ]
 }

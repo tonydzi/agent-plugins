@@ -1,0 +1,20 @@
+{
+  "name": "prove-build-works",
+  "version": "0.1.0",
+  "description": "Acceptance gate for coding agents: before the agent says done it runs the build live, breaks it on purpose, shows a test red on broken code, gets a review from a different vendor's model and repeats the check by a second method. Ends in PASS, PARTIAL or FAIL with evidence. Instructions only: runs no code.",
+  "author": {
+    "name": "Anton Dziatkovskii",
+    "url": "https://github.com/tonydzi"
+  },
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "verification",
+    "acceptance",
+    "mutation-testing",
+    "code-review",
+    "agent-reliability",
+    "quality-gate"
+  ],
+  "skills": "./skills/"
+}

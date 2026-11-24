@@ -35,6 +35,9 @@ Replace `break-it-first` with any name from the table.
 | `sqlite-graph-memory` | Recall workflow for linked markdown notes through a separately configured sqlite-graph-memory MCP server. | [tonydzi/sqlite-graph-memory](https://github.com/tonydzi/sqlite-graph-memory) |
 | `charm-os` | Stop hook that records each turn in a local SQLite file, plus decision memo and trace eval skills. Needs python3. | [tonydzi/charm-os](https://github.com/tonydzi/charm-os) |
 
+| `five-whys-root-cause` | Root-cause a defect that keeps coming back: five whys with evidence at every step. |
+| `prove-build-works` | Prove a build works before saying done: live data, break it on purpose, rerun. |
+| `session-handoff` | Hand a task to another agent session or machine without losing state. |
 All plugins except `charm-os` are instructions only: they ship markdown skills and run no code.
 `charm-os` ships a Stop hook that runs locally and sends nothing over the network.
 
