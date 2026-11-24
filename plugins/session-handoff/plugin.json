@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "session-handoff",
+  "version": "0.1.0",
+  "description": "Write one self-contained handoff file so another agent session, machine or person can resume unfinished work cold: decisions with reasons, proof of what is done, exact paths, boundaries, rollback and one named next step. Instructions only: runs no code.",
+  "license": "MIT",
+  "keywords": [
+    "handoff",
+    "context",
+    "compaction",
+    "multi-agent",
+    "session",
+    "workflow"
+  ],
+  "author": {
+    "name": "Anton Dziatkovskii",
+    "url": "https://github.com/tonydzi"
+  }
+}

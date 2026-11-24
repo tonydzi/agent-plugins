@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "five-whys-root-cause",
+  "version": "0.1.0",
+  "description": "Root-cause method for defects that keep coming back: gate on three dated cases, one evidence-backed five-why chain with a falsifier per link, counterfactual proof, minimal fix, and a defect-return test. Instructions only, no scripts.",
+  "license": "MIT",
+  "keywords": [
+    "root-cause-analysis",
+    "five-whys",
+    "debugging",
+    "postmortem",
+    "incident-review",
+    "regression-testing"
+  ],
+  "author": {
+    "name": "Anton Dziatkovskii",
+    "url": "https://github.com/tonydzi"
+  }
+}
