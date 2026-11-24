@@ -154,6 +154,22 @@
         "session",
         "workflow"
       ]
+    },
+    {
+      "name": "simplest-build-first",
+      "source": "./plugins/simplest-build-first",
+      "description": "Build discipline for coding agents: five questions before building (can I not build it, do we have it, is there a standard, is a file enough), a token-cost ladder for choosing between working paths, a three-condition test for added complexity, MVP as a paper pipe with a usage counter and upgrade threshold, and five checks before done. Instructions only: runs no code.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "simplicity",
+        "mvp",
+        "token-cost",
+        "architecture",
+        "agent-reliability",
+        "yagni"
+      ]
     }
   ]
 }

@@ -150,6 +150,18 @@
         "source": "local",
         "path": "./plugins/session-handoff"
       }
+    },
+    {
+      "name": "simplest-build-first",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "development",
+      "source": {
+        "source": "local",
+        "path": "./plugins/simplest-build-first"
+      }
     }
   ]
 }
